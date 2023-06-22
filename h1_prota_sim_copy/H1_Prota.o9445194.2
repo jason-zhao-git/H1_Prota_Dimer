@@ -1,0 +1,20 @@
+mkdir: cannot create directory '/tmp/lock-gpu2': File exists
+mkdir: cannot create directory '/tmp/lock-gpu0': File exists
+Successful import
+Loading a restart...
+num_steps: 379780000
+Running Production...
+Traceback (most recent call last):
+  File "/wynton/home/sali/jzhao24/prodSim/Dimer_H1Prota/h1_prota_sim_copy/restart_h1_prota_prod.py", line 66, in <module>
+    simulation.step(num_steps)
+  File "/wynton/home/sali/jzhao24/.conda/envs/python39/lib/python3.9/site-packages/simtk/openmm/app/simulation.py", line 132, in step
+    self._simulate(endStep=self.currentStep+steps)
+  File "/wynton/home/sali/jzhao24/.conda/envs/python39/lib/python3.9/site-packages/simtk/openmm/app/simulation.py", line 234, in _simulate
+    self._generate_reports(wrapped, True)
+  File "/wynton/home/sali/jzhao24/.conda/envs/python39/lib/python3.9/site-packages/simtk/openmm/app/simulation.py", line 256, in _generate_reports
+    reporter.report(self, state)
+  File "/wynton/home/sali/jzhao24/.conda/envs/python39/lib/python3.9/site-packages/simtk/openmm/app/statedatareporter.py", line 195, in report
+    self._checkForErrors(simulation, state)
+  File "/wynton/home/sali/jzhao24/.conda/envs/python39/lib/python3.9/site-packages/simtk/openmm/app/statedatareporter.py", line 350, in _checkForErrors
+    raise ValueError('Energy is NaN')
+ValueError: Energy is NaN
